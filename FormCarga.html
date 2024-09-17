@@ -14,7 +14,18 @@
 <body>
   <div class="container-fluid d-flex justify-content-center align-items-center" style="min-height: 100vh;">
     <div class="row form-container">
-      
+      <form action="submit.php" method="post"> <div class="mb-3">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="name"   
+name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="surname" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="surname" name="surname" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
     </div>
   </div>
 </body>
