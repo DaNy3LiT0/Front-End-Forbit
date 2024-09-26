@@ -12,9 +12,27 @@ body {
 }
 
 .form-container {
-  background-color: #f8f9fa; /* Color de fondo claro */
-  border: 1px solid #6c757d; /* Borde gris oscuro */
-  border-radius: 0.75rem; /* Bordes redondeados */
-  padding: 2rem; /* Padding alrededor del formulario */
-  max-width: 800px; /* Ancho máximo del contenedor */
+  background-color: #f8f9fa;
+  border: 1px solid #6c757d;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  max-width: 800px;
+  /* Estilos adicionales para la pantalla de bienvenida */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 10px 20px;
 }
