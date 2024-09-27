@@ -1,0 +1,51 @@
+body {
+    display: flex;
+  }
+  .sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    color: white;
+    transition: all 0.3s;
+  }
+  .sidebar.collapsed {
+    min-width: 0;
+    max-width: 0;
+    overflow: hidden;
+  }
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  .sidebar a:hover {
+    background-color: #495057;
+  }
+  .toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 260px; 
+    z-index: 1000;
+    transition: left 0.3s;
+  }
+  .sidebar.collapsed + .toggle-btn {
+    left: 10px; 
+  }
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    transition: margin-left 0.3s;
+    margin-left: 250px; 
+  }
+  .content.collapsed {
+    margin-left: 0;
+  }
+  .btn.btn-dark.toggle-btn{
+        padding: 5px;
+  }
+  img{
+      width: 20%;
+      margin-left: 70px;
+  }
